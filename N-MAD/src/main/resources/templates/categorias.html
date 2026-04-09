@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cap-Palencia | Categorías</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'DM Sans', sans-serif; background-color: #0e1020; color: #fff; }
+
+        nav {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.07);
+            position: sticky; top: 0; background: #0e1020; z-index: 100;
+        }
+        .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; }
+        .nav-logo span { color: #818cf8; }
+        .nav-links { list-style: none; display: flex; gap: 32px; }
+        .nav-links a {
+            color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px;
+            letter-spacing: 1px; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #fff; }
+
+        .page-title {
+            text-align: center; padding: 48px 32px 40px;
+            font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 4px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px; padding: 0 32px 48px; max-width: 1100px; margin: 0 auto;
+        }
+        .cat-card {
+            background: #161929; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px; padding: 40px 32px; text-align: center;
+            transition: transform 0.25s, border-color 0.25s; cursor: pointer;
+            text-decoration: none; color: #fff;
+        }
+        .cat-card:hover { transform: translateY(-6px); border-color: rgba(129,140,248,0.4); }
+        .cat-icon { font-size: 48px; margin-bottom: 16px; }
+        .cat-nombre { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px; }
+        .cat-desc { font-size: 13px; color: rgba(255,255,255,0.4); margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">Cap<span>-</span>Palencia</div>
+        <ul class="nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/categorias">Categorías</a></li>
+            <li><a href="/ofertas">Ofertas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="page-title">Categorías</h1>
+
+    <div class="grid">
+        <a href="/catalogo" class="cat-card">
+            <div class="cat-icon">🧢</div>
+            <div class="cat-nombre">Snapback</div>
+            <div class="cat-desc">Estilo clásico ajustable</div>
+        </a>
+        <a href="/catalogo" class="cat-card">
+            <div class="cat-icon">🏆</div>
+            <div class="cat-nombre">Fitted</div>
+            <div class="cat-desc">Talla exacta, look premium</div>
+        </a>
+        <a href="/catalogo" class="cat-card">
+            <div class="cat-icon">🌊</div>
+            <div class="cat-nombre">Trucker</div>
+            <div class="cat-desc">Malla trasera, estilo urbano</div>
+        </a>
+        <a href="/catalogo" class="cat-card">
+            <div class="cat-icon">⭐</div>
+            <div class="cat-nombre">Dad Hat</div>
+            <div class="cat-desc">Relajado y sin estructura</div>
+        </a>
+    </div>
+</body>
+</html>

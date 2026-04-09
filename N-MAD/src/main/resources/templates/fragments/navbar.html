@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="navbar">
+    <div class="nav-logo">Cap<span>-</span>Palencia</div>
+    <ul class="nav-links">
+        <li><a th:href="@{/}">Inicio</a></li>
+        <li><a th:href="@{/categorias}">Categorías</a></li>
+        <li><a th:href="@{/ofertas}">Ofertas</a></li>
+        <li><a th:href="@{/contacto}">Contacto</a></li>
+    </ul>
+</nav>
+</body>
+</html>

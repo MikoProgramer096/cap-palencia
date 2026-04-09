@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cap-Palencia | Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'DM Sans', sans-serif; background-color: #0e1020; color: #fff; }
+
+        nav {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.07);
+            position: sticky; top: 0; background: #0e1020; z-index: 100;
+        }
+        .nav-logo {
+            font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px;
+        }
+        .nav-logo span { color: #818cf8; }
+        .nav-links { list-style: none; display: flex; gap: 32px; }
+        .nav-links a {
+            color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px;
+            letter-spacing: 1px; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #fff; }
+
+        .hero {
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; min-height: 85vh; text-align: center; padding: 40px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif; font-size: 96px;
+            letter-spacing: 8px; line-height: 1; margin-bottom: 20px;
+        }
+        .hero h1 span { color: #818cf8; }
+        .hero p {
+            font-size: 16px; letter-spacing: 3px; text-transform: uppercase;
+            color: rgba(255,255,255,0.4); margin-bottom: 40px;
+        }
+        .btn-hero {
+            background: #818cf8; color: #fff; border: none; padding: 16px 40px;
+            font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase; border-radius: 8px;
+            cursor: pointer; text-decoration: none; transition: background 0.2s;
+        }
+        .btn-hero:hover { background: #6366f1; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">Cap<span>-</span>Palencia</div>
+        <ul class="nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/categorias">Categorías</a></li>
+            <li><a href="/ofertas">Ofertas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Cap<span>-</span>Palencia</h1>
+        <p>Tu tienda de gorras exclusivas</p>
+        <a href="/catalogo" class="btn-hero">Ver Catálogo</a>
+    </div>
+</body>
+</html>
