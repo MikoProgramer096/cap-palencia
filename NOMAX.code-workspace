@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../NOMAX"
+		},
+		{
+			"path": "C:/Users/ricoa/Downloads/NØMAD/N-MAD"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"liveServer.settings.multiRootWorkspaceName": "N-MAD",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
